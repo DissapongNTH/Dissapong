@@ -10,10 +10,10 @@
 - ข้อมูลผู้ติดเชื้อ Covid-19 และปริมาณน้ำมัน :[ข้อมูลผู้ติดเชื้อ Covid-19 และปริมาณน้ำมัน]
 
 ### Classification
-- cardiovascular : [cardiovascular]
+- cardiovascular : [cardiovascular](https://github.com/DissapongNTH/Portfolio/blob/main/Classificition.ipynb)
 
 ### Regression
-- House Prices : [House Prices]
+- House Prices : [House Prices](https://github.com/DissapongNTH/Portfolio/blob/main/Regression.ipynb)
 
 ### Dashboard
 - Dashboard : [ข้อมูลผู้ติดเชื้อ Covid-19 และปริมาณน้ำมัน](https://lookerstudio.google.com/reporting/f8ab3c00-37c7-4b7a-b11d-5158d236b145)
