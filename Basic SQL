@@ -1,27 +1,79 @@
 #Create Table
-create table employee (
-    id INT unique,
-    name text,
-    depertment text,
-    position text,
-    salary real
+create table customer (
+    customer_id text unique,
+    customer_name text
     );
 
-insert into employee values
-    (1,'Happy','Marketing','CEO',150000),
-    (2,'Elsa','Marketing','VP',90000),
-    (3,'Lucy','Sales','Manager',70000),
-    (4,'Wendy','IT','Senior Manager',85000),
-    (5,'Natsu','IT','Manager',65000);
+#insert data
+insert into customer values
+    ('C1','Happy'),
+    ('C2','Elsa'),
+    ('C3','Lucy'),
+    ('C4','Wendy'),
+    ('C5','Natsu');
    
-select * from employee;
+create table Product (
+    Product_id text unique,
+    Product_name text
+    );
+    
+insert into Product values
+    ('P1','A'),
+    ('P2','B'),
+    ('P3','C'),
+    ('P4','D'),
+    ('P5','E'),
+    ('P6','F');
+    
+    
+create table Sales (
+    date date,
+    customer_id text,
+    Product_id text,
+    Quantity Int,
+    Unit_Price real,
+    Sale real
+    );
+    
+insert into Sales values
+    ('2023-01-01','C1','P4',2,10,20),
+    ('2023-01-01','C4','P4',3,15,45),
+    ('2023-01-03','C1','P3',3,30,90),
+    ('2023-01-03','C5','P6',2,15,30),
+    ('2023-01-04','C3','P6',4,25,100),
+    ('2023-01-04','C4','P1',4,10,40),
+    ('2023-01-05','C1','P1',7,15,105),
+    ('2023-01-05','C2','P5',1,5,5),
+    ('2023-01-05','C5','P5',5,10,50);
 
-update employee
-set name = 'Gray',
-    depertment = 'Sales'
-where id = 5 ;
-select * from employee;
+#Quiz
+#Quiz 1 ผลลัพธ์ที่ได้จะมีจำนวนทั้งหมดกี่ ROW
+select * from 
+    customer,
+    Product,
+    Sales;
 
-delete from employee 
-where id = 5;
-select * from employee;
+#Quiz 2 ต้องการทราบชื่อลูกค้าและยอดสั่งซื้อของลูกค้า โดยเรียงยอดสั่งซื้อมากไปหาน้อยนทั้งหมด
+select c.customer_name,sum(s.sale) as sum 
+from customer as c
+join sales as s
+on c.customer_id = s.customer_id
+group by c.customer_name
+order by sum desc;
+
+#Quiz 3 ต้องการให้แสดงข้อมูลของรหัสสินค้าชื่อสินค้า ที่ขายไม่ได้เลยว่ามีสินค้าอะไรบ้าง
+select Product_id,Product_name
+from Product
+where Product_id not in (select distinct Product_id from sales);
+
+#Quiz 4 ต้องการให้แสดงข้อมูล ครั้งที่ซื้อ, วันที่สั่งซื้อ, ชื่อลูกค้า, จำนวนสินค้า, ยอดขายของลูกค้าเเต่ละคนเลยว่ามีสินค้าอะไรบ้าง
+select     
+ROW_NUMBER() OVER(partition by c.customer_name
+                order by s.date) as "n_sale", 
+    s.date,
+    c.customer_name,
+    s.Quantity,
+    s.sale
+from sales as s
+left join customer as c
+on c.customer_id = s.customer_id;
