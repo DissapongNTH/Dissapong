@@ -6,6 +6,8 @@
 - Converting Date : [Converting Date](https://docs.google.com/spreadsheets/d/1MidSOCG8lRA22SYUUPJP7r0RGwCXiS7xeFdGsrbtPa4/edit#gid=425083492)
 - ID Card Parser : [ID Card Parser](https://docs.google.com/spreadsheets/d/1MidSOCG8lRA22SYUUPJP7r0RGwCXiS7xeFdGsrbtPa4/edit#gid=1130838460)
 
+### Basic SQL   
+- สร้าง 3 Table และตอบคำถาม [SQL](https://www.mycompiler.io/view/6fS4KwVFSdF)
 ### Data Transformation  
 - [ข้อมูลผู้ติดเชื้อ Covid-19 และปริมาณน้ำมัน](https://github.com/DissapongNTH/Portfolio/blob/main/Data%20Transformation%20.ipynb) ทำการ cleansing ข้อมูล และgroup by ข้อมูล ภูมิภาค คนติดเชื้อ Covid-19 และปริมาณน้ำมัน และสรุปผล
 
