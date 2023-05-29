@@ -7,7 +7,7 @@
 - ID Card Parser : [ID Card Parser](https://docs.google.com/spreadsheets/d/1MidSOCG8lRA22SYUUPJP7r0RGwCXiS7xeFdGsrbtPa4/edit#gid=1130838460)
 
 ### Data Transformation  
-- ข้อมูลผู้ติดเชื้อ Covid-19 และปริมาณน้ำมัน :[ข้อมูลผู้ติดเชื้อ Covid-19 และปริมาณน้ำมัน]
+- ข้อมูลผู้ติดเชื้อ Covid-19 และปริมาณน้ำมัน :[ข้อมูลผู้ติดเชื้อ Covid-19 และปริมาณน้ำมัน](https://github.com/DissapongNTH/Portfolio/blob/main/Data%20Transformation%20.ipynb)
 
 ### Classification
 - cardiovascular : [cardiovascular](https://github.com/DissapongNTH/Portfolio/blob/main/Classificition.ipynb)
