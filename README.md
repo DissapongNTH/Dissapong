@@ -7,7 +7,7 @@
 - ID Card Parser : [ID Card Parser](https://docs.google.com/spreadsheets/d/1MidSOCG8lRA22SYUUPJP7r0RGwCXiS7xeFdGsrbtPa4/edit#gid=1130838460)
 
 ### Basic SQL   
-- สร้าง 3 Table และตอบคำถาม [Basic SQL]([https://www.mycompiler.io/view/6fS4KwVFSdF](https://github.com/DissapongNTH/Portfolio/blob/main/Basic%20SQL))
+- สร้าง 3 Table และตอบคำถาม [Basic SQL](https://github.com/DissapongNTH/Portfolio/blob/main/Basic%20SQL)
 ### Data Transformation  
 - [ข้อมูลผู้ติดเชื้อ Covid-19 และปริมาณน้ำมัน](https://github.com/DissapongNTH/Portfolio/blob/main/Data%20Transformation%20.ipynb) ทำการ cleansing ข้อมูล และgroup by ข้อมูล ภูมิภาค คนติดเชื้อ Covid-19 และปริมาณน้ำมัน และสรุปผล
 
