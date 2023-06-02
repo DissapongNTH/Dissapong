@@ -8,9 +8,10 @@
 
 ### Basic SQL   
 - สร้าง 3 Table และตอบคำถาม [Basic SQL](https://github.com/DissapongNTH/Portfolio/blob/main/Basic%20SQL)
+
 ### Data Transformation  
 - [ข้อมูลผู้ติดเชื้อ Covid-19 และปริมาณน้ำมัน](https://github.com/DissapongNTH/Portfolio/blob/main/Data%20Transformation%20.ipynb) ทำการ cleansing ข้อมูล และgroup by ข้อมูล ภูมิภาค คนติดเชื้อ Covid-19 และปริมาณน้ำมัน และสรุปผล
-
+- [Skillkamp](https://github.com/DissapongNTH/Portfolio/blob/main/skillkamp.ipynb) ทำการดูสถิติเบื้องต้นของการจัดส่งสินค้า และgroup by ข้อมูล
 ### Classification
 - [cardiovascular](https://github.com/DissapongNTH/Portfolio/blob/main/Classificition.ipynb) ทำนายการเกิดโรคหัวใจและหลอดเลือด โดยได้ใช้โมเดล K-NN, Naive Bayes, Decision Tree, Random Forest, Logistic Regression, XGboost และหา Feature Importances ที่มีความสำคัญต่อการทำนายการเกิดโรคหัวใจและหลอดเลือด
 
@@ -19,3 +20,4 @@
 
 ### Dashboard
 - [Dashboard ข้อมูลผู้ติดเชื้อ Covid-19 และปริมาณน้ำมัน](https://lookerstudio.google.com/reporting/f8ab3c00-37c7-4b7a-b11d-5158d236b145) Dashboard ข้อมูลผู้ติดเชื้อ Covid-19 และปริมาณน้ำมันที่สร้างโดย Looker Studio 
+- [Dashboard การจัดส่งสินค้า](https://public.tableau.com/app/profile/dissapong.nathonghhor/viz/SkillKamp/1_1) Dashboard การจัดส่งสินค้า สร้างโดย Tableau
